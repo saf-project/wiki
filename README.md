@@ -1,14 +1,14 @@
-Newcomers and those seeking an introduction to Ethereum may go to https://ethereum.org or https://github.com/ethereum/wiki/wiki.
+# Welcome to the Sea-freight Automation Framework (SAF) Wiki
 
-Note that you can proofread while you read and learn about anything.
+This is the community maintained wiki covering all sorts of information on the Sea-freight Automation Framework (SAF). SAF is an initiative to create an automation framework and shift from current human control to machine control operation. If adopted by industry it should drastically increase the level of automation and reduce IT cost.
 
-Contribution guidelines
-Please just edit the pages in the wiki directly as shown in the sidebar here: https://github.com/ethereum/wiki/wiki, rather than making pull requests.
+## SAF Foundation
+Project is being developed by the SAF Foundation, an Estonian non-profit, with contributions from across the globe. The SAF Foundation’s mission is to promote and support development of industry wide standard APIs and communication protocols as well as research in Artificial Intelligence. Foundation promotes migration from current paradigm of “human control supply chain processes and manual user tasks” to paradigm of “machine controlled supply chain with process flow automation spanning over all supply chain participants with less dependency on human availability and efficiency”. 
 
-Please only create an issue if you can't fix it by editing yourself, and only if it is related to the wiki. If it is a technical issue e.g. with web3 or JSON.RPC, geth, Mist (although note that Mist isn't really user-ready yet, so using alternatives like MyEtherWallet is recommended instead), etc., please post an issue in the repo for that project as well, and reference the issue that you create in this repo (by copying and pasting the link to the issue in this repo in a comment in the issue in the relevant project repo).
+To contact SAF Foundation, please, send an email to: info@saf-project.org or visit http://www.saf-project.org/
 
-If you are translating an article, please create a new page and create the translation in that. Do not edit an existing article by translating it. Someone did this with the home wiki, changing the title, and this actually caused the home page to just direct to a list of pages in the wiki, and made it hard to find the edited home page as the title was changed to Arabic. So do not edit the title of an article.
 
-If you have experience with editing on Wikipedia, then that will help with knowing how to edit this wiki, although the contribution rules are less strict. Referencing facts is a key writing and proofreading task, as well as checking that information is up-to-date (and updating it if otherwise), correcting grammar, typos, and spelling; and making the wiki comprehensive and easy to understand.
+## Don't get lost
 
-Other rules, such as a neutral point of view and no original research are desirable, but may be hard to maintain. Notability is less relevant.
+SAF Documentation is the [WIKI](https://github.com/saf-project/wiki/wiki)
+
