@@ -10,5 +10,5 @@ To contact SAF Foundation, please, send an email to: info@saf-project.org or vis
 
 ## Don't get lost
 
-SAF Documentation is the [WIKI](https://github.com/saf-project/wiki/wiki)
+SAF White Paper and other documents are  published  in the [WIKI](https://github.com/saf-project/wiki/wiki)
 
