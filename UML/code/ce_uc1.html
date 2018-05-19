@@ -17,9 +17,9 @@
 	 P2->>P1: 1-CreateEEI
 	 P1->>P4: 2-GetTransport
 	 activate P4
-	 P4->>P5: 3-GetCC
+	 P4->>P5: 3-GetCcObject
 	 activate P5
-	 P5->>P4: 4-ReturnCC
+	 P5->>P4: 4-ReturnCcObject
 	 deactivate P5
 	 P4->>P1: 5-ReturnTransport
 	 
