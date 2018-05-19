@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="mermaid.min.css">
+</head>
+<body>
+  <div class="mermaid">
+	  
+	  
+ sequenceDiagram
+     participant P1 as Manager (CE)
+     participant P2 as Exporter
+	 participant P3 as AES
+	 participant P4 as Shipper
+	 participant P5 as Manager (CC)
+	 P2->>P1: 1-CreateEEI
+	 P1->>P4: 2-GetTransport
+	 activate P4
+	 P4->>P5: 3-GetCC
+	 activate P5
+	 P5->>P4: 4-ReturnCC
+	 deactivate P5
+	 P4->>P1: 5-ReturnTransport
+	 
+	 deactivate P4
+	 P1 ->> P3: 6-ApplyEEI
+	 activate P3
+	 P3 ->> P1: 7-Return ITN
+	 deactivate P3
+  	 P1 ->> P2: 8-UpdateEEI
+	 P1 ->> P4: 9-UpdateEEI
+	 P4 ->> P5: 10-UpdateITN
+	
+  
+  </div>
+  <script src="mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+</body>
+</html>
