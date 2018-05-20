@@ -20,23 +20,22 @@
 	 P3->>P1: 2 CreateEngagement
 	 Note right of P1: CE Engagement <br/> is created
 	 P1->>P5: 3 GetTransport
-	 activate P6
+	 activate P5
 	 P5->>P6: 4 GetTransport
-	 activate P7
+	 activate P6
 	 P6->>P5: 5 ReturnTransport
 	 deactivate P6
-	 P6->>P1: 6 ReturnTransport
-	 
-	 deactivate P6
-	 P1 ->> P3: 7 ApplyEEI
-	 activate P3
-	 P3 ->> P1: 8 ReturnITN
-	 deactivate P3
+	 P5->>P1: 6 ReturnTransport
+	 deactivate P5 
+	 P1 ->> P4: 7 ApplyEEI
+	 activate P4
+	 P4 ->> P1: 8 ReturnITN
+	 deactivate P4
 	  Note right of P1: EEI is<br/> accepted
   	 P1 ->> P3: 9 UpdateEEI
-	 P1 ->> P6: 10 UpdateEEI
+	 P1 ->> P5: 10 UpdateEEI
 	 Note right of P1: CE Engagement <br/> closed
-	 P6 ->> P7: 11 UpdateITN
+	 P5 ->> P6: 11 UpdateITN
 	
   
   </div>
