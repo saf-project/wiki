@@ -12,18 +12,19 @@
      participant P1 as ManagerCEApp
      participant P2 as Exporter
 	 participant P3 as ExporterApp
-	 participant P6 as ShipperApp
-	 participant P7 as ManagerCCApp
+	 participant P4 as AES
+	 participant P5 as ShipperApp
+	 participant P6 as ManagerCCApp
 	 
 	 P2-->>P3:1 Enter EEI
 	 P3->>P1: 2 CreateEngagement
 	 Note right of P1: CE Engagement <br/> is created
-	 P1->>P6: 3 GetTransport
+	 P1->>P5: 3 GetTransport
 	 activate P6
-	 P6->>P7: 4 GetTransport
+	 P5->>P6: 4 GetTransport
 	 activate P7
-	 P7->>P6: 5 ReturnTransport
-	 deactivate P7
+	 P6->>P5: 5 ReturnTransport
+	 deactivate P6
 	 P6->>P1: 6 ReturnTransport
 	 
 	 deactivate P6
