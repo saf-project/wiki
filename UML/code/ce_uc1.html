@@ -9,28 +9,33 @@
 	  
 	  
  sequenceDiagram
-     participant P1 as Manager (CE)
+     participant P1 as ManagerCEApp
      participant P2 as Exporter
-	 participant P3 as AES
-	 participant P4 as Shipper
-	 participant P5 as Manager (CC)
-	 P2->>P1: 1-CreateEEI
-	 P1->>P4: 2-GetTransport
-	 activate P4
-	 P4->>P5: 3-GetCcObject
-	 activate P5
-	 P5->>P4: 4-ReturnCcObject
-	 deactivate P5
-	 P4->>P1: 5-ReturnTransport
+	 participant P3 as ExporterApp
+	 participant P6 as ShipperApp
+	 participant P7 as ManagerCCApp
 	 
-	 deactivate P4
-	 P1 ->> P3: 6-ApplyEEI
+	 P2-->>P3:1 Enter EEI
+	 P3->>P1: 2 CreateEngagement
+	 Note right of P1: CE Engagement <br/> is created
+	 P1->>P6: 3 GetTransport
+	 activate P6
+	 P6->>P7: 4 GetTransport
+	 activate P7
+	 P7->>P6: 5 ReturnTransport
+	 deactivate P7
+	 P6->>P1: 6 ReturnTransport
+	 
+	 deactivate P6
+	 P1 ->> P3: 7 ApplyEEI
 	 activate P3
-	 P3 ->> P1: 7-Return ITN
+	 P3 ->> P1: 8 ReturnITN
 	 deactivate P3
-  	 P1 ->> P2: 8-UpdateEEI
-	 P1 ->> P4: 9-UpdateEEI
-	 P4 ->> P5: 10-UpdateITN
+	  Note right of P1: EEI is<br/> accepted
+  	 P1 ->> P3: 9 UpdateEEI
+	 P1 ->> P6: 10 UpdateEEI
+	 Note right of P1: CE Engagement <br/> closed
+	 P6 ->> P7: 11 UpdateITN
 	
   
   </div>
