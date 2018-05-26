@@ -16,6 +16,12 @@
 	 participant P5 as ShipperApp
 	 participant P6 as ManagerCCApp
 	 
+	 Note over P1: ManageCE
+	 Note over P3: ExporterCE
+	 Note over P5: ShipperCE<br/> ShipperCC
+	 Note over P6: ManagerCC
+	  
+	  
 	 P2-->>P3:1 Enter EEI
 	 P3->>P1: 2 CreateEngagement
 	 Note right of P1: CE Engagement <br/> is created
