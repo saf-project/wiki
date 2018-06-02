@@ -1,4 +1,4 @@
-# Welcome to the Sea-freight Automation Framework (SAF) Wiki
+# Welcome to the Sea-freight Automation Framework (SAF)  Wiki
 Updated June 2,2018
 
 This is the community maintained wiki covering all sorts of information on the Sea-freight Automation Framework (SAF). SAF is an initiative to create an automation framework and shift from current human control to machine control operation. If adopted by industry it should drastically increase the level of automation and reduce IT cost.
